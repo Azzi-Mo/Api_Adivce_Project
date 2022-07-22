@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>api pro</title>
+
+    <script src="./fontawesome/all.min.css"></script>
+    <link rel="stylesheet" href="./Bootstrap/Bootstrap.min.css" />
+    <link rel="stylesheet" href="All.css" />
+  </head>
+
+  <body class="container">
+    <script>
+
+     Up_sec = document.createElement('section')
+     Up_sec.setAttribute('class' , ' Up_sec')
+
+     document.body.append(Up_sec)
+
+      sec_bg = document.createElement('section')
+      sec_bg.setAttribute('class', 'sec_bg ')
+      
+
+      sec1 = document.createElement("section");
+      sec1.setAttribute("class", "sec1 ");
+      
+      adv = document.createElement("div");
+      adv.setAttribute('class' , ' adv')
+
+      up_icon = document.createElement("div");
+      icon = document.createElement("i");
+      icon.setAttribute("class", "fa-solid fa-caret-right icon");
+      up_icon.append(icon);
+
+
+      Up_sec.append(sec1 , sec_bg)
+      sec1.append(adv);
+      sec1.insertBefore(adv, sec1.firsrtElementChild);
+      sec1.append(up_icon);
+      sec1.children[1].setAttribute('class' , 'Up_icon')
+
+      function GetRep() {
+        fetch("	https://api.adviceslip.com/advice")
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            let result = data.slip.advice;
+
+            adv.innerHTML = result;
+          });
+      }
+
+      if (adv.innerHTML === "") {
+        GetRep();
+      }
+      up_icon.onclick = function () {
+        GetRep();
+      };
+    </script>
+    <script src="./fontawesome/all.min.js"></script>
+    <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./Bootstrap/all.min.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+  </body>
+</html>

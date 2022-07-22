@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@keyframes light {
+  0% {
+    color: #595959;
+  }
+  50% {
+    color: #138100;
+  }
+  100% {
+    color: #595959;
+  }
+}
+body {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+@media only screen and (max-width: 480px) {
+  .Up_sec {
+    width: 90%;
+    height: 300px;
+    position: relative;
+  }
+
+  .sec_bg {
+    border: 3px solid #595959;
+    width: 100%;
+    height: 100%;
+    background: #595959;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .sec1 {
+    position: absolute;
+    z-index: 3;
+    top: -10px;
+    left: -10px;
+    border: 3px solid #595959;
+    background: #eee;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: [] 240px [] 60px;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .sec1 .adv {
+    display: flex;
+    font-size: 19px;
+    color: #595959;
+    align-items: center;
+    border-bottom: 1px solid #595959;
+  }
+  .sec1 .Up_icon {
+    height: 54px;
+    display: flex;
+    align-items: center;
+  }
+  .sec1 .Up_icon .icon {
+    font-size: 30px;
+    cursor: pointer;
+    animation-name: light;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .Up_sec {
+    width: 70%;
+    height: 300px;
+    position: relative;
+  }
+
+  .sec_bg {
+    border: 3px solid #595959;
+    width: 100%;
+    height: 100%;
+    background: #595959;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .sec1 {
+    position: absolute;
+    z-index: 3;
+    top: -10px;
+    left: -10px;
+    border: 3px solid #595959;
+    background: #eee;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: [] 240px [] 60px;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .sec1 .adv {
+    display: flex;
+    font-size: 19px;
+    color: #595959;
+    align-items: center;
+    border-bottom: 1px solid #595959;
+  }
+  .sec1 .Up_icon {
+    height: 54px;
+    display: flex;
+    align-items: center;
+  }
+  .sec1 .Up_icon .icon {
+    font-size: 30px;
+    cursor: pointer;
+    animation-name: light;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Up_sec {
+    width: 50%;
+    height: 300px;
+    position: relative;
+  }
+
+  .sec_bg {
+    border: 3px solid #595959;
+    width: 100%;
+    height: 100%;
+    background: #595959;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .sec1 {
+    position: absolute;
+    z-index: 3;
+    top: -10px;
+    left: -10px;
+    border: 3px solid #595959;
+    background: #eee;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: [] 240px [] 60px;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .sec1 .adv {
+    display: flex;
+    font-size: 19px;
+    color: #595959;
+    align-items: center;
+    border-bottom: 1px solid #595959;
+  }
+  .sec1 .Up_icon {
+    height: 54px;
+    display: flex;
+    align-items: center;
+  }
+  .sec1 .Up_icon .icon {
+    font-size: 30px;
+    cursor: pointer;
+    animation-name: light;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+@media (min-width: 992px) and (max-width: 1280px) {
+  .Up_sec {
+    width: 40%;
+    height: 300px;
+    position: relative;
+  }
+
+  .sec_bg {
+    border: 3px solid #595959;
+    width: 100%;
+    height: 100%;
+    background: #595959;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .sec1 {
+    position: absolute;
+    z-index: 3;
+    top: -10px;
+    left: -10px;
+    border: 3px solid #595959;
+    background: #eee;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: [] 240px [] 60px;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .sec1 .adv {
+    display: flex;
+    font-size: 19px;
+    color: #595959;
+    align-items: center;
+    border-bottom: 1px solid #595959;
+  }
+  .sec1 .Up_icon {
+    height: 54px;
+    display: flex;
+    align-items: center;
+  }
+  .sec1 .Up_icon .icon {
+    font-size: 30px;
+    cursor: pointer;
+    animation-name: light;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  .Up_sec {
+    width: 30%;
+    height: 300px;
+    position: relative;
+  }
+
+  .sec_bg {
+    border: 3px solid #595959;
+    width: 100%;
+    height: 100%;
+    background: #595959;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .sec1 {
+    position: absolute;
+    z-index: 3;
+    top: -10px;
+    left: -10px;
+    border: 3px solid #595959;
+    background: #eee;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: [] 240px [] 60px;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .sec1 .adv {
+    display: flex;
+    font-size: 19px;
+    color: #595959;
+    align-items: center;
+    border-bottom: 1px solid #595959;
+  }
+  .sec1 .Up_icon {
+    height: 54px;
+    display: flex;
+    align-items: center;
+  }
+  .sec1 .Up_icon .icon {
+    font-size: 30px;
+    cursor: pointer;
+    animation-name: light;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
